@@ -6,11 +6,8 @@ public class PlanPostpago extends TarificadorInterface{
 	
 	}
 
+
 		
-	@Override
-	public void calcularCosto() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }
