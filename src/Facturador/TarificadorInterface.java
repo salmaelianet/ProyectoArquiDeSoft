@@ -21,9 +21,15 @@ public  class TarificadorInterface {
 		switch (opcion) {
 		case 1:
 			tarifa= new TarifaUnica();
+			break;
 		  
 		case 2:
 			tarifa= new TarifaPorHora();
+			break;
+		default:
+			
+			System.out.println("La opcion es invalida");
+		break;
 		}
 		return tarifa;
 		
