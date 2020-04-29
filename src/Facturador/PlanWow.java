@@ -7,14 +7,11 @@ public class PlanWow extends TarificadorInterface {
 	public PlanWow() {
 		
 	}
+
 	@Override
-	public void calcularTarifa() {
+	public void calcularCosto() {
 		// TODO Auto-generated method stub
 		
-	}
-	@Override
-	public void elegirTarifa() {
-		// TODO Auto-generated method stub
 	}
 
 

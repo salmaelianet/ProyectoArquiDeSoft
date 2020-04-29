@@ -2,19 +2,15 @@ package Facturador;
 
 public class PlanPrepago extends TarificadorInterface {
 
-	public void PlanPrepago() {
+	public PlanPrepago() {
 		
 	}
 	@Override
-	public void calcularTarifa() {
+	public void calcularCosto() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void elegirTarifa() {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 }

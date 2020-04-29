@@ -1,6 +1,9 @@
 package Facturador;
 
-public abstract class TarifaInterface {
+public class TarifaInterface {
 
-	public abstract int calcularCosto();
+
+	public int calcularCosto() {
+		return 0;
+	}
 }
