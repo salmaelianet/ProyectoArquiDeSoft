@@ -1,8 +1,10 @@
 package Facturador;
 
+import java.time.LocalDateTime;
+
 public class Llamada {
-	private String inicioLlamada;
-	private String finLlamada;
+	private LocalDateTime inicioLlamada;
+	private LocalDateTime finLlamada;
 	private Integer numeroOrigen;
 	private Integer numeroDestino;
 	private String duracionLlamada;
@@ -23,7 +25,22 @@ public class Llamada {
         this.numeroDestino = numeroDestino;
     }
 	
+	public LocalDateTime getInicioLlamada() {
+        return inicioLlamada;
+    }
 
+    public void setInicioLlamada(final LocalDateTime inicioLlamada) {
+        this.inicioLlamada = inicioLlamada;
+    }
+
+    public LocalDateTime getFinLlamada() {
+        return finLlamada;
+    }
+
+    public void setFinLlamada(final LocalDateTime finLlamada) {
+        this.finLlamada = finLlamada;
+    }
+	
     public double getCosto() {
     	return costo;
     }

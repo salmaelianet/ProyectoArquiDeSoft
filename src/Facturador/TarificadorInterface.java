@@ -5,9 +5,7 @@ import java.util.Scanner;
 public  class TarificadorInterface {
 	
 	TarifaInterface tarifa;
-	
-	//Para elegir la tarifa que usara el plan
-	public TarifaInterface elegirTarifa() {
+		public TarifaInterface elegirTarifa() {
 		
 		System.out.println("Elegir tarifa que desea usar para el plan:");
 		System.out.println("1.Tarifa Unica");
@@ -29,5 +27,9 @@ public  class TarificadorInterface {
 		break;
 		}
 		return tarifa;
+	}
+
+	public double calcularTarifa(Llamada llamada) {
+		return 0;
 	}
 }
