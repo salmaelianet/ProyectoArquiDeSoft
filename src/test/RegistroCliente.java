@@ -5,9 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Before;
 import org.junit.jupiter.api.Test;
-
 import Facturador.Cliente;
 
 class RegistroCliente {
@@ -17,7 +15,6 @@ class RegistroCliente {
 	
 	private List<Cliente> clientes = new ArrayList<Cliente>();
 	
-	
 	@Test
 	public void registroClienteTest() {
 		assertNotNull(clientes.add(Cliente1));
@@ -25,11 +22,8 @@ class RegistroCliente {
 		assertNotNull(clientes.add(Cliente3));
 	}
 	
-	
 	@Test
 	public void verificarNumero() {		
 		assertEquals(Cliente1.getNumero(), 76911911);
 	}
-	
-	
 }
