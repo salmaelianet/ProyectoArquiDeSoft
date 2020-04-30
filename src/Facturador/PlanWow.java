@@ -13,13 +13,18 @@ public class PlanWow extends TarificadorInterface {
     public Integer getNumeroDeTelefono() {
         return numeroTelefono;
     }
+    public void setNumeroCliente(Integer numeroTelefono) {
+        this.numeroTelefono = numeroTelefono;
+    }
+
     
-    public void setWowFriendsPhoneNumbers(final List<Integer> numerosAmigos) {
-        if(numerosAmigos.size() <= _CANTIDAD_NUMEROS_AMIGOS) {
+    public boolean esNumeroAmigo(final Integer integer) {
+        return numerosAmigos.stream().anyMatch(numeroAmigo -> numeroAmigo.equals(integer));
+    }
+    
+	public void setNumerosAmigos(List<Integer> numerosAmigos) {
+		if(numerosAmigos.size() <= _CANTIDAD_NUMEROS_AMIGOS) {
             this.numerosAmigos = numerosAmigos;
-        }
-    }
-    public boolean esNumeroAmigo(final Integer numero) {
-        return numerosAmigos.stream().anyMatch(numeroAmigo -> numeroAmigo.equals(numero));
-    }
+		}
+	}
 }

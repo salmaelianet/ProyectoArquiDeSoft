@@ -12,14 +12,14 @@ public class Llamada {
 		return numeroOrigen;
 	}
 	 
-	public void setNumeroOrigen(final Integer numeroOrigen){
+	public void setNumeroOrigen(Integer numeroOrigen){
 	    
 		this.numeroOrigen = numeroOrigen;
 	}
 	public Integer getNumeroDestino() {
 		return numeroDestino;
 	}
-	public void setNumeroDestino(final Integer numeroDestino) {
+	public void setNumeroDestino(Integer numeroDestino) {
         this.numeroDestino = numeroDestino;
     }
 	
