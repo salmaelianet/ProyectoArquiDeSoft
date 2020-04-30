@@ -6,7 +6,6 @@ public  class TarificadorInterface {
 	
 	TarifaInterface tarifa;
 	
-
 	//Para elegir la tarifa que usara el plan
 	public TarifaInterface elegirTarifa() {
 		
@@ -22,18 +21,13 @@ public  class TarificadorInterface {
 		case 1:
 			tarifa= new TarifaUnica();
 			break;
-		  
 		case 2:
 			tarifa= new TarifaPorHora();
 			break;
 		default:
-			
 			System.out.println("La opcion es invalida");
 		break;
 		}
 		return tarifa;
-		
-			
 	}
-	
 }

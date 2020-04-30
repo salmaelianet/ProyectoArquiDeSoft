@@ -15,8 +15,6 @@ public class TarifaPorHora extends TarifaInterface{
 		System.out.println("La duracion de la llamada es:"+duracionLlamada+" El costo por minuto es: "+costoPorMinuto);
 	}
 
-	
-	
 	@Override
 	public int calcularCosto() {
 		return duracionLlamada*costoPorMinuto;
